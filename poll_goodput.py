@@ -64,6 +64,6 @@ if __name__ == "__main__":
         print("bad args, please follow: python {workload_script}.py {Is_Jobset (bool)}")
         sys.exit(1)
 
-    workload_command = ["python", sys.argv[1]]
+    workload_command = ["python3", sys.argv[1]]
     failure_data = poll_workload_status(workload_command, sys.argv[2])
     print(f"\nFinal failure data: {failure_data}")
